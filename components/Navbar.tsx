@@ -5,9 +5,9 @@ import Link from "next/link"
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center py-2 px-5 shadow-sm border-b-[1px]">
+    <nav className="flexBetween max-container padding-container shadow-sm border-b-[1px]">
       <Image src='/assets/images/logo.png' 
-      alt="logo" width={100} height={100}
+      alt="logo" width={80} height={80}
       />
       <ul className="hidden md:flex gap-5">
       {navLinks.map((link) => (
