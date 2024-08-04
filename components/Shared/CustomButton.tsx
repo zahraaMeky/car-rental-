@@ -1,10 +1,10 @@
 import { CustomButtonProps } from "@/types"
 
-const CustomButton = ({title,containerStyle}:CustomButtonProps) => {
+const CustomButton = ({title,containerStyles}:CustomButtonProps) => {
   return (
     <button
       type="button"
-      className={`custom-btn ${containerStyle}`}
+      className={`custom-btn ${containerStyles}`}
       >
         <span className="flex-1">{title}</span>
     </button>
