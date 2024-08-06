@@ -4,7 +4,7 @@ import { ClerkProvider} from '@clerk/nextjs'
 
 
 export const metadata: Metadata = {
-  title: "Next Car <Rent></Rent> App",
+  title: "Next Car App",
   description: "Discover world's best car showcase application",
 };
 
