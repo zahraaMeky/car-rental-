@@ -1,4 +1,4 @@
-import {Footer, Hero, Navbar,SearchInput } from "@/components";
+import {CarFilterOption, Footer, Hero, Navbar,SearchInput } from "@/components";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <Navbar/>
       <Hero/>
       <SearchInput/>
+      <CarFilterOption/>
       <Footer/>
     </main>
   );
