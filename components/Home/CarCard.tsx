@@ -1,15 +1,22 @@
 'use client'
-import { useState } from "react";
+import { useState,useEffect} from "react";
 import Image from "next/image";
 import { FaGasPump } from 'react-icons/fa';
 import AirlineSeatReclineNormalIcon from '@mui/icons-material/AirlineSeatReclineNormal'; 
 import CustomButton from "../Shared/CustomButton";
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
+import {CarCardProps} from '@/types/index'
 
-export const CarCard = ({ car }) => {
-    const [cars, setCars] = useState<any>(car);
+export const CarCard = ({ car }:CarCardProps) => {
+    const [cars, setCars] = useState<any>();
 
-    return (
+    useEffect(() => {
+        if(car){
+            setCars(car) 
+        }
+      }, [car]);
+    
+    return car&& (
         <div className="car-card group p-4 bg-gray-50 hover:bg-white hover:shadow-md rounded-3xl flex flex-col justify-between h-full">
             <div>
                 <h2 className="text-[20px] font-medium mb-2">{car.name}</h2>

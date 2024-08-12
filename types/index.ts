@@ -21,6 +21,9 @@ export interface CarImage {
   }
    
 
-  interface CarCardProps {
+  export interface CarCardProps {
     car: Car;
   }
+
+
+  
