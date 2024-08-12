@@ -18,11 +18,13 @@ export interface CarImage {
   
   export interface CarListProps {
     cars: Car[];
+    loading: boolean;
   }
    
 
   export interface CarCardProps {
     car: Car;
+   
   }
 
 

@@ -6,6 +6,7 @@ import SearchInput from './Home/SearchInput'
 import CarFilterOption from './Home/CarFilterOption'
 import CarList from './Home/CarList'
 import {CarCard} from './Home/CarCard'
+import Loading from './Home/Loading'
 export {
     Hero,
     CustomButton,
@@ -14,5 +15,6 @@ export {
     SearchInput,
     CarFilterOption,
     CarList,
-    CarCard
+    CarCard,
+    Loading
 }
