@@ -10,7 +10,7 @@ export const CarCard = ({ car }) => {
     const [cars, setCars] = useState<any>(car);
 
     return (
-        <div className="car-card p-4 bg-gray-50 hover:bg-white hover:shadow-md rounded-3xl flex flex-col justify-between h-full">
+        <div className="car-card group p-4 bg-gray-50 hover:bg-white hover:shadow-md rounded-3xl flex flex-col justify-between h-full">
             <div>
                 <h2 className="text-[20px] font-medium mb-2">{car.name}</h2>
                 <h2 className="text-[28px] font-bold mb-2">
